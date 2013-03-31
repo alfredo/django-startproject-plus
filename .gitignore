@@ -1,0 +1,7 @@
+*.py[co]
+.coverage
+.DS_Store
+.noseids
+*~
+*.mo
+*.egg-info
