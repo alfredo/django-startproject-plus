@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-setup(name='django-startproject',
+setup(name='django-startproject-plus',
       version='0.1a',
-      description='Django command for creating new projects from a template.',
-      long_description='Drop-in replacement for django-admin.py with '
-      'extra_context support.',
+      description='Django superset startproject command for creating '
+      'new projects.',
+      long_description='Drop-in replacement for django-admin.py supersets '
+      'the command by adding extra_context support.',
       author='Alfredo Aguirre',
       author_email='hello@madewithbyt.es',
       license='BSD License',
@@ -13,7 +14,7 @@ setup(name='django-startproject',
       include_package_data=True,
       scripts=['django-startproject.py'],
       classifiers=[
-          'Development Status :: Alpha',
+          'Development Status :: 3 - Alpha',
           'Environment :: Web Environment',
           'Framework :: Django',
           'Intended Audience :: Developers',

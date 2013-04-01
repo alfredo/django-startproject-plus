@@ -1,16 +1,29 @@
 Django startproject
 ===================
 
-Provides an ``--extra_context`` flag for the django-admin.py startproject command.
+Wrapper around Django's ``startproject`` command. Supersets the command by adding an ``--extra_context`` flag.
 
-More info see: https://code.djangoproject.com/ticket/18277
+This command can be invoked with the same flags that ``startproject`` supports.
 
-Only tested on Django 1.5.x
+
+Why?
+----
+
+The template functionality on Django's ``startproject`` command is great, but a template system without support for more context variables is not very helpful with more complex setups.
+
+This issue has been brought up to the django-devs mailing list https://code.djangoproject.com/ticket/18277
+
 
 Usage
 -----
 
-This is a drop in replacement for the django-admin.py startup, with an ``extra_context`` flag
+This is a drop in replacement for the django-admin.py startup, with an ``extra_context`` flag::
 
 
-    django-startproject.py --extra_context='{"some": "json"}'
+    django-startproject.py myproject --extra_context='{"some": "json"}'
+
+
+TODO
+----
+
+- Support ``django-admin.py startapp``.
