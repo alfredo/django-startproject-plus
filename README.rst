@@ -1,7 +1,7 @@
 Django startproject
 ===================
 
-Wrapper around Django's ``startproject`` command. Supersets the command by adding an ``--extra_context`` flag.
+Wrapper around Django's ``startproject`` command. Supersets the command by adding an support for passing extra context when using the ``template`` functionality.
 
 This command can be invoked with the same flags that ``startproject`` supports.
 
