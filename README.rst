@@ -14,13 +14,23 @@ The template functionality on Django's ``startproject`` command is great, but a 
 This issue has been brought up to the django-devs mailing list https://code.djangoproject.com/ticket/18277
 
 
+Installation
+------------
+
+This package requires Django 1.5.x installed.
+
+The package is available in pypi::
+
+    pip install django-startproject-plus
+
+
 Usage
 -----
 
 This is a drop in replacement for the django-admin.py startup, with an ``extra_context`` flag::
 
 
-    django-startproject.py myproject --extra_context='{"some": "json"}'
+  django-startproject.py myproject --extra_context='{"some": "json"}'
 
 
 TODO
