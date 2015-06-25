@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 
 setup(name='django-startproject-plus',
-      version='0.1b.1',
+      version='0.1b.2',
       description='Django superset startproject command for creating '
       'new projects.',
       long_description=README,
