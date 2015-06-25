@@ -8,11 +8,20 @@ from django.core.management.commands import startproject
 
 class StartProjectPlus(startproject.Command):
 
-    option_list = startproject.Command.option_list + (
-        make_option('--extra_context',
-                    action='store', dest='extra_context',
-                    help='Extra context in JSON to pass to the templates.'),
-    )
+    if getattr(startproject.Command, 'option_list', None):
+        # Deprecated as of Django 1.8
+        option_list = startproject.Command.option_list + (
+            make_option('--extra_context',
+                        action='store', dest='extra_context',
+                        help='Extra context in JSON to pass to the templates.'),
+        )
+    else:
+        # Django >= 1.8
+        def add_arguments(self, parser):
+            super(StartProjectPlus, self).add_arguments(parser)
+            parser.add_argument(
+                '--extra_context', action='store', dest='extra_context',
+                help='Extra context in JSON to pass to the templates.')
 
     def usage(self, subcommand):
         """Return a brief description of how to use this command, by
