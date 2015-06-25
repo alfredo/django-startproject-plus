@@ -17,7 +17,7 @@ This issue has been brought up to the django-devs mailing list https://code.djan
 Installation
 ------------
 
-This package requires Django 1.5.x installed.
+This package requires at least Django 1.5.x installed. Latest Django 1.8.x is supported.
 
 The package is available in pypi::
 
