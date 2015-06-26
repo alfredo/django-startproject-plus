@@ -1,2 +1,6 @@
+include tests.py
+include tox.ini
 # Include docs in the root.
 include *.rst
+include AUTHORS
+include LICENSE
