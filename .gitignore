@@ -1,7 +1,10 @@
+/build
+/dist
 *.py[co]
 .coverage
 .DS_Store
 .noseids
+.tox
 *~
 *.mo
 *.egg-info
